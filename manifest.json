@@ -1,0 +1,15 @@
+{
+    "manifest_version": 3,
+    "name": "PassePasPartout",
+    "version": "1.0",
+    "description": "Une extension Chrome pouvant sauvegarder vos mots de passes a votre place !",
+    "action": {
+      "default_popup": "/view/popup.html",
+      "default_icon": {
+        "16": "/assets/img/icon(2).png",
+        "48": "/assets/img/icon(1).png",
+        "128": "/assets/img/icon.png"
+      }
+    },
+    "permissions": ["storage"]
+  }

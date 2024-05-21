@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Gestionnaire de Mots de Passe</title>
+  <link rel="stylesheet" href="../assets/css/popup.css">
+</head>
+<body>
+  <div id="app">
+    <h1>PassePasPartout</h1>
+    <form id="addPasswordForm">
+      <input type="text" id="website" placeholder="Site web" required>
+      <input type="text" id="username" placeholder="Nom d'utilisateur" required>
+      <input type="password" id="password" placeholder="Mot de passe" required>
+      <button type="button" id="generatePassword">Générer</button>
+      <button type="submit">Ajouter</button>
+    </form>
+    <ul id="passwordList"></ul>
+  </div>
+  <script src="js/app.js"></script>
+</body>
+</html>
