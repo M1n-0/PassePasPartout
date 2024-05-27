@@ -1,3 +1,8 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap');
+
+.Titre {
+  font-family: nunito, Arial, sans-serif;
+}
 body {
   font-family: Arial, sans-serif;
   margin: 0;
@@ -16,4 +21,38 @@ input, button {
 
 button {
   cursor: pointer;
+}
+
+#ok {
+  display: none;
+  width: 50px;
+  height: 50px;
+  background-image: url('../img/passepartout-ok.png');
+  background-size: cover;
+}
+
+.icon-container{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+button.copy-username,
+button.copy-password,
+button.toggle-password,
+button.delete-credentials {
+    background: none;
+    border: none;
+    cursor: pointer;
+    font-size: 1.2em;
+    margin-left: 5px;
+    margin-right: 5px;
+}
+
+.password {
+    font-family: 'Courier New', Courier, monospace;
+}
+
+div {
+    margin-bottom: 10px;
 }
