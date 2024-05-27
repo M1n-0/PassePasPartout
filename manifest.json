@@ -1,32 +1,28 @@
 {
-  "manifest_version": 3,
+  "manifest_version": 2,
   "name": "PassePasPartout",
   "version": "1.0",
-  "description": "Une extension simple pour gérer vos mots de passe",
+  "description": "Gestionnaire de mots de passe simple",
   "permissions": [
+    "activeTab",
     "storage",
-    "activeTab"
+    "clipboardWrite"
   ],
-  "action": {
+  "background": {
+    "scripts": ["./js/background.js"],
+    "persistent": false
+  },
+  "browser_action": {
     "default_popup": "./view/popup.html",
     "default_icon": {
-      "16": "assets/img/icon16.png",
-      "48": "assets/img/icon48.png",
-      "128": "assets/img/icon128.png"
+      "16": "/assets/img/icon16.png",
+      "48": "/assets/img/icon48.png",
+      "128": "/assets/img/icon128.png"
     }
   },
-  "background": {
-    "service_worker": "./js/background.js"
-  },
-  "content_scripts": [
-    {
-      "matches": ["<all_urls>"],
-      "js": ["./js/content.js"]
-    }
-  ],
   "icons": {
-    "16": "assets/img/icon16.png",
-    "48": "assets/img/icon48.png",
-    "128": "assets/img/icon128.png"
+    "16": "/assets/img/icon16.png",
+      "48": "/assets/img/icon48.png",
+      "128": "/assets/img/icon128.png"
   }
 }
